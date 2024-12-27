@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Développeur Web Full Stack</title>
+    <link rel="stylesheet" href="./assets/css/style-index.css">
+</head>
+<body>
+    <header>
+        <div class="logo">JOHN DOE</div>
+        <nav>
+            <ul>
+                <li><a href="./index.html" target="_blank">HOME</a></li>
+                <li><a href="./services.html" target="_blank">SERVICES</a></li>
+                <li><a href="./portfolio.html" target="_blank">PORTFOLIO</a></li>
+                <li><a href="./contact.html" target="_blank">CONTACT</a></li>
+                <li><a href="./mentions-légales.html" target="_blank">MENTIONS LÉGALES</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Bonjour, je suis <br> John Doe</h1>
+                <h2>Développeur web full stack</h2>
+                <button onclick="openOverlay()" class="cta-button">En savoir plus</button>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="about">
+                <h2>À propos</h2>
+                <img src="./assets/Images/john-doe-about.jpg" alt="John Doe">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, necessitatibus consectetur tempora eligendi nostrum, ex delectus recusandae impedit nulla aut aliquid.</p>
+            </div>
+
+            <div class="skills">
+                <h2>Mes compétences</h2>
+                <div class="skill-bar">
+                    <span>HTML 90%</span>
+                    <div class="bar" style="width: 90%; background-color: red;"></div>
+                </div>
+                <div class="skill-bar">
+                    <span>CSS3 80%</span>
+                    <div class="bar" style="width: 80%; background-color: blue;"></div>
+                </div>
+                <div class="skill-bar">
+                    <span>JAVASCRIPT 70%</span>
+                    <div class="bar" style="width: 70%; background-color: yellow;"></div>
+                </div>
+                <div class="skill-bar">
+                    <span>PHP 60%</span>
+                    <div class="bar" style="width: 60%; background-color: green;"></div>
+                </div>
+                <div class="skill-bar">
+                    <span>REACT 50%</span>
+                    <div class="bar" style="width: 50%; background-color: lightblue;"></div>
+                </div>
+            </div>
+            <div class="overlay" id="overlay">
+                <div class="overlay-content">
+                    <span class="close-btn" onclick="closeOverlay()">&times;</span>
+                    <img src="./assets/Images/Pictogramme/loup.png" alt="Overlay Image">
+                    <div class="overlay-text">
+                        <h2>John Doe</h2>
+                        <p>As we all know, John Doe's identity is unknown. I just wanted to contribute without being known.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact">
+                <h3>John Doe</h3>
+                <p>40 rue Laure Diebold<br>
+                69009 Lyon, France<br>
+                <a href="tel:10 20 30 40 50">10 20 30 40 50</a><br>
+                <a href="mailto:john.doe@gmail.com">john.doe@gmail.com</a></p>
+                <div class="social-media">
+                    <a href="https://fr.linkedin.com/" target="_blank"><img src="./assets/Images/Pictogramme/Linkedin.png" alt="LinkedIn"></a>
+                    <a href="https://github.com/" target="_blank"><img src="./assets/Images/Pictogramme/GitHub.png" alt="GitHub"></a>
+                    <a href="https://x.com/home" target="_blank"><img src="./assets/Images/Pictogramme/Twitter.png" alt="Twitter"></a>
+                </div>
+            </div>
+
+            <div class="links">
+                <h3>Liens utiles</h3>
+                <ul>
+                    <li><a href="./index.html" target="_blank">Accueil</a></li>
+                    <li><a href="./services.html" target="_blank">Services</a></li>
+                    <li><a href="./portfolio.html" target="_blank">Portfolio</a></li>
+                    <li><a href="./contact.html" target="_blank">Me contacter</a></li>
+                    <li><a href="./mentions-légales.html" target="_blank">Mentions légales</a></li>
+                </ul>
+            </div>
+
+            <div class="portfolio">
+                <h3>Mes dernières réalisations</h3>
+                <ul>
+                    <li>Formation</li>
+                    <li>Restaurant Akira</li>
+                    <li>Espace bien-être</li>
+                    <li>Création d'une API</li>
+                    <li>Maquette d'un site</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./assets/JavaScript/overlay.jsx"></script>
+<script src="./assets/JavaScript/index.jsx"></script>
+</html>

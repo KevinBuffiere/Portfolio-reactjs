@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+header nav a:hover{
+    text-decoration: underline;
+}
+
+.hero {
+    background-image: url('../Images/banner.jpg'); /* Remplacez par l'URL de votre image */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    margin-top: 60px; /* Ajustez pour la hauteur de votre header */
+}
+
+.portfolio {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.portfolio h2 {
+    margin-bottom: 10px;
+}
+
+.portfolio .line {
+    width: 70%;
+    height: 2px;
+    background-color: #007bff;
+    margin: 0 auto 20px;
+}
+
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portfolio-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.portfolio-item h3 {
+    margin: 10px 0;
+}
+
+.portfolio-item a {
+    color: white;
+    background-color: #007bff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contact-info a{
+    color: white;
+}
+
+.contact-info .social-media img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer .contact-info, .footer-section {
+    margin: 10px;
+    flex: 1;
+    min-width: 200px;
+}
+
+footer .contact-info h3, .footer-section h3 {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 5px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
